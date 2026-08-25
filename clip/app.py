@@ -6,6 +6,7 @@ import torch
 from PIL import Image
 import io
 import base64
+import os
 
 app = Flask(__name__)
 
@@ -101,4 +102,5 @@ def health():
     return jsonify({'status': 'ok'})
 
 if __name__ == '__main__':
-    app.run(debug=False, host='0.0.0.0', port=5000)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(debug=False, host='0.0.0.0', port=port)
