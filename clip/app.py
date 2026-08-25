@@ -11,10 +11,10 @@ import os
 app = Flask(__name__)
 
 # Load models
-rf_resale = pickle.load(open('artifacts/model_resale.pkl', 'rb'))
-rf_repair = pickle.load(open('artifacts/model_repair_cost.pkl', 'rb'))
-rf_recycle = pickle.load(open('artifacts/model_recycle.pkl', 'rb'))
-encoders = pickle.load(open('artifacts/encoders.pkl', 'rb'))
+rf_resale = pickle.load(open('model_resale.pkl', 'rb'))
+rf_repair = pickle.load(open('model_repair_cost.pkl', 'rb'))
+rf_recycle = pickle.load(open('model_recycle.pkl', 'rb'))
+encoders = pickle.load(open('encoders.pkl', 'rb'))
 
 # Load CLIP
 device = "cpu"
