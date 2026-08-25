@@ -1,0 +1,7 @@
+flask
+torch
+torchvision
+clip @ git+https://github.com/openai/CLIP.git
+pillow
+numpy
+scikit-learn
